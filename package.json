@@ -1,4 +1,13 @@
 {
+  "name": "ethers-simple-storage-fcc",
+  "version": "1.0.0",
+  "repository": "git@github_private:sunrui1996/ethers-simple-storage-fcc.git",
+  "author": "sunrui1996 <183428323@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "solc --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
+    "compile2": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  },
   "dependencies": {
     "dotenv": "^16.0.3",
     "ethers": "^5.7.1",
@@ -8,10 +17,6 @@
     "solc": "^0.8.17",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
-  },
-  "scripts": {
-    "compile": "solc --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
-    "compile2": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
